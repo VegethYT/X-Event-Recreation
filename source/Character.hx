@@ -512,6 +512,23 @@ class Character extends FlxSprite
 				addOffset("singDOWN", 24, 2);
 
 				playAnim('idle');
+
+			case 'ink':
+				tex = Paths.getSparrowAtlas('ink');
+				frames = tex;
+				animation.addByPrefix('idle', 'Ink idle dance', 24);
+				animation.addByPrefix('singUP', 'Ink Sing Note UP', 24);
+				animation.addByPrefix('singRIGHT', 'Ink Sing Note RIGHT', 24);
+				animation.addByPrefix('singDOWN', 'Ink Sing Note DOWN', 24);
+				animation.addByPrefix('singLEFT', 'Ink Sing Note LEFT', 24);
+
+				addOffset('idle');
+				addOffset("singUP", -1, 4);
+				addOffset("singRIGHT", -6, 8);
+				addOffset("singLEFT", 0, -5);
+				addOffset("singDOWN", 1, -20);
+
+				playAnim('idle');
 		}
 
 		dance();
