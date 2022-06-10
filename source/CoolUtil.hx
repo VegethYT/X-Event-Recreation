@@ -1,6 +1,7 @@
 package;
 
 import lime.utils.Assets;
+import flixel.graphics.frames.FlxAtlasFrames; //i hate dame dane!!!!
 
 using StringTools;
 
@@ -36,6 +37,21 @@ class CoolUtil
 	
 			return daList;
 		}
+
+	public static function joinFrames(spriteArray:Array<String>, ?library:String):FlxAtlasFrames {
+		var framesArray:Array<FlxAtlasFrames> = [];
+		var returnFrames = Paths.getSparrowAtlas(spriteArray[0], library);
+		spriteArray.remove(spriteArray[0]);
+		for (sprite in spriteArray)
+			framesArray.push(Paths.getSparrowAtlas(sprite, library));
+
+		for (sprite in framesArray) {
+			for (frame in sprite.frames)
+				returnFrames.pushFrame(frame);
+		}
+
+		return returnFrames;
+	}
 
 	public static function numberArray(max:Int, ?min = 0):Array<Int>
 	{
