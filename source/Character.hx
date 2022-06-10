@@ -1,5 +1,6 @@
 package;
 
+import flixel.animation.FlxAnimationController;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.animation.FlxBaseAnimation;
@@ -16,6 +17,10 @@ class Character extends FlxSprite
 	public var curCharacter:String = 'bf';
 
 	public var holdTimer:Float = 0;
+
+	public var animations:Array<FlxAnimationController> = [];
+
+	public var otherFrames:Array<Character>;
 
 	public function new(x:Float, y:Float, ?character:String = "bf", ?isPlayer:Bool = false)
 	{
@@ -527,6 +532,89 @@ class Character extends FlxSprite
 				addOffset("singRIGHT", -6, 8);
 				addOffset("singLEFT", 0, -5);
 				addOffset("singDOWN", 1, -20);
+
+				playAnim('idle');
+
+			case 'xgaster':
+				tex = CachedFrames.cachedInstance.fromSparrow('xgaster1', 'xgaster1'); //I FORKED ALL THIS CODE FROM VS TRICKY CUZ I'M DUMB -VEGETH 
+
+				frames = tex;
+
+				graphic.persist = true;
+				graphic.destroyOnNoUse = false;
+
+				animation.addByPrefix('idle','Xgaster idle dance', 24);
+
+				otherFrames = new Array<Character>();
+				
+				otherFrames.push(new Character(100, 100, 'xgaster2'));
+				otherFrames.push(new Character(100, 100, 'xgaster3'));
+				otherFrames.push(new Character(100, 100, 'xgaster4'));
+				otherFrames.push(new Character(100, 100, 'xgaster5'));
+
+				animations.push(animation);
+				for (i in otherFrames)
+					animations.push(animation);
+
+				trace('poggers');
+
+				addOffset("idle");
+
+				playAnim('idle');
+
+			case 'xgaster2':
+				tex = CachedFrames.cachedInstance.fromSparrow('xgaster1', 'xgaster1');
+
+				frames = tex;
+
+				graphic.persist = true;
+				graphic.destroyOnNoUse = false;
+
+				animation.addByPrefix('idle','Xgaster Sing Note LEFT', 24);
+
+				addOffset("idle");
+
+				playAnim('idle');
+
+			case 'xgaster3':
+				tex = CachedFrames.cachedInstance.fromSparrow('xgaster2', 'xgaster2');
+
+				frames = tex;
+
+				graphic.persist = true;
+				graphic.destroyOnNoUse = false;
+
+				animation.addByPrefix('idle','Xgaster Sing Note RIGHT', 24);
+
+				addOffset("idle");
+
+				playAnim('idle');
+
+			case 'xgaster4':
+				tex = CachedFrames.cachedInstance.fromSparrow('xgaster1', 'xgaster1');
+
+				frames = tex;
+
+				graphic.persist = true;
+				graphic.destroyOnNoUse = false;
+
+				animation.addByPrefix('idle','Xgaster Sing Note UP', 24);
+
+				addOffset("idle",475, -450);
+
+				playAnim('idle');
+
+			case 'xgaster5':
+				tex = CachedFrames.cachedInstance.fromSparrow('xgaster2', 'xgaster2');
+
+				frames = tex;
+
+				graphic.persist = true;
+				graphic.destroyOnNoUse = false;
+
+				animation.addByPrefix('idle','Xgaster Sing Note DOWN', 24);
+
+				addOffset("idle");
 
 				playAnim('idle');
 		}
