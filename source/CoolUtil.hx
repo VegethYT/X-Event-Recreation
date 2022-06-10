@@ -1,6 +1,7 @@
 package;
 
 import lime.utils.Assets;
+import flixel.graphics.frames.FlxAtlasFrames //i hate dame dane!!!!
 
 using StringTools;
 
