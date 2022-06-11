@@ -41,6 +41,7 @@ jobs:
           haxelib install flixel-tools
           haxelib install flixel-ui
           haxelib install flixel-addons
+          haxelib git newgrounds https://github.com/Geokureli/Newgrounds
           haxelib install tjson
           haxelib install hxjsonast
           haxelib git linc_luajit https://github.com/nebulazorua/linc_luajit
@@ -81,6 +82,7 @@ jobs:
           haxelib install flixel-tools
           haxelib install flixel-ui
           haxelib install flixel-addons
+          haxelib git newgrounds https://github.com/Geokureli/Newgrounds
           haxelib install tjson
           haxelib install hxjsonast
           haxelib git linc_luajit https://github.com/nebulazorua/linc_luajit
@@ -122,6 +124,7 @@ jobs:
           haxelib install flixel-tools
           haxelib install flixel-ui
           haxelib install flixel-addons
+          haxelib git newgrounds https://github.com/Geokureli/Newgrounds
           haxelib install tjson
           haxelib install hxjsonast
           haxelib git linc_luajit https://github.com/nebulazorua/linc_luajit
@@ -189,6 +192,7 @@ jobs:
           haxelib install flixel-tools
           haxelib install flixel-ui 
           haxelib install flixel-addons
+          haxelib git newgrounds https://github.com/Geokureli/Newgrounds
           haxelib install hscript
           haxelib git linc_luajit https://github.com/jigsaw-4277821/linc_luajit
           haxelib git extension-androidtools https://github.com/jigsaw-4277821/extension-androidtools  
