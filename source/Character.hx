@@ -532,41 +532,23 @@ class Character extends FlxSprite
 				playAnim('idle');
 
 			case 'xgaster':
-<<<<<<< HEAD
 				tex = CoolUtil.joinFrames(['xgaster1', 'xgaster2'], 'shared'); //Finally givin' this old ass code some use -Peppy 
-=======
-		                tex = CoolUtil.joinFrames(['xgaster1', 'xgaster2'], 'shared'); //Finally givin' this old ass code some use -Peppy 
->>>>>>> 16e3fa229ffa237db7728fe041f48749d5ca6caa
 
 				frames = tex;
 
 				animation.addByPrefix('idle','Xgaster idle dance', 24);
-<<<<<<< HEAD
 				animation.addByPrefix('singLEFT','Xgaster Sing Note LEFT', 24);
-                animation.addByPrefix('singRIGHT','Xgaster Sing Note RIGHT', 24);
-                animation.addByPrefix('singDOWN','Xgaster Sing Note DOWN', 24);
-                animation.addByPrefix('singUP','Xgaster Sing Note UP', 24);
-=======
-                                animation.addByPrefix('singLEFT','Xgaster Sing Note LEFT', 24);
-                                animation.addByPrefix('singRIGHT','Xgaster Sing Note RIGHT', 24);
-                                animation.addByPrefix('singDOWN','Xgaster Sing Note DOWN', 24);
-                                animation.addByPrefix('singUP','Xgaster Sing Note UP', 24);
->>>>>>> 16e3fa229ffa237db7728fe041f48749d5ca6caa
+                		animation.addByPrefix('singRIGHT','Xgaster Sing Note RIGHT', 24);
+                		animation.addByPrefix('singDOWN','Xgaster Sing Note DOWN', 24);
+                		animation.addByPrefix('singUP','Xgaster Sing Note UP', 24);
 
 				trace('poggers');
 
 				addOffset("idle");
-<<<<<<< HEAD
 				addOffset("singLEFT");
-                addOffset("singRIGHT");
-                addOffset("singUP");
-                addOffset("singDOWN");
-=======
-                                addOffset("singLEFT");
-                                addOffset("singRIGHT");
-                                addOffset("singUP");
-                                addOffset("singDOWN");
->>>>>>> 16e3fa229ffa237db7728fe041f48749d5ca6caa
+                		addOffset("singRIGHT");
+                		addOffset("singUP");
+                		addOffset("singDOWN");
 
 				playAnim('idle');
 		}
