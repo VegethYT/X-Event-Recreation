@@ -49,6 +49,7 @@ jobs:
           haxelib install hscript
           haxelib git hscript-ex https://github.com/ianharrigan/hscript-ex
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
+          haxelib install polymod
           haxelib install hxcpp-debug-server
           haxelib list
       - name: Create Version Tag
@@ -90,6 +91,7 @@ jobs:
           haxelib install hscript
           haxelib git hscript-ex https://github.com/ianharrigan/hscript-ex
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
+          haxelib install polymod
           haxelib install hxcpp-debug-server
           haxelib list
         shell: cmd
@@ -132,6 +134,7 @@ jobs:
           haxelib install hscript
           haxelib git hscript-ex https://github.com/ianharrigan/hscript-ex
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
+          haxelib install polymod
           haxelib install hxcpp-debug-server
           haxelib list
       - name: Create Version Tag
@@ -195,6 +198,7 @@ jobs:
           haxelib install flixel-addons
           haxelib install hscript
           haxelib git linc_luajit https://github.com/jigsaw-4277821/linc_luajit
+          haxelib install polymod
           haxelib git extension-androidtools https://github.com/jigsaw-4277821/extension-androidtools  
           haxelib git extension-videoview https://github.com/jigsaw-4277821/extension-videoview
           haxelib list
