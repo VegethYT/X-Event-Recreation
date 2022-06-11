@@ -40,7 +40,7 @@ jobs:
           haxelib run lime setup flixel
           haxelib run lime setup
           haxelib install flixel-tools
-          haxelib install newgrounds
+          haxelib git newgrounds https://github.com/Geokureli/Newgrounds
           haxelib install flixel-ui
           haxelib install flixel-addons
           haxelib install tjson
@@ -82,7 +82,7 @@ jobs:
           haxelib run lime setup flixel
           haxelib run lime setup
           haxelib install flixel-tools
-          haxelib install newgrounds
+          haxelib git newgrounds https://github.com/Geokureli/Newgrounds
           haxelib install flixel-ui
           haxelib install flixel-addons
           haxelib install tjson
@@ -125,7 +125,7 @@ jobs:
           haxelib run lime setup flixel
           haxelib run lime setup
           haxelib install flixel-tools
-          haxelib install newgrounds
+          haxelib git newgrounds https://github.com/Geokureli/Newgrounds
           haxelib install flixel-ui
           haxelib install flixel-addons
           haxelib install tjson
@@ -193,7 +193,7 @@ jobs:
           haxelib run lime config JAVA_HOME $JAVA_HOME
           haxelib run lime config ANDROID_SETUP true
           haxelib install flixel-tools
-          haxelib install newgrounds
+          haxelib git newgrounds https://github.com/Geokureli/Newgrounds
           haxelib install flixel-ui 
           haxelib install flixel-addons
           haxelib install hscript
