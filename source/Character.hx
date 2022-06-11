@@ -538,17 +538,17 @@ class Character extends FlxSprite
 
 				animation.addByPrefix('idle','Xgaster idle dance', 24);
 				animation.addByPrefix('singLEFT','Xgaster Sing Note LEFT', 24);
-                animation.addByPrefix('singRIGHT','Xgaster Sing Note RIGHT', 24);
-                animation.addByPrefix('singDOWN','Xgaster Sing Note DOWN', 24);
-                animation.addByPrefix('singUP','Xgaster Sing Note UP', 24);
+                		animation.addByPrefix('singRIGHT','Xgaster Sing Note RIGHT', 24);
+                		animation.addByPrefix('singDOWN','Xgaster Sing Note DOWN', 24);
+                		animation.addByPrefix('singUP','Xgaster Sing Note UP', 24);
 
 				trace('poggers');
 
 				addOffset("idle");
 				addOffset("singLEFT");
-                addOffset("singRIGHT");
-                addOffset("singUP");
-                addOffset("singDOWN");
+                		addOffset("singRIGHT");
+                		addOffset("singUP");
+                		addOffset("singDOWN");
 
 				playAnim('idle');
 		}
